@@ -59,14 +59,24 @@ def get_list():
 
             for i in range(len(r_list)):
                 r_dict = r_list[i]
-                print(r_dict['complexTypeName'], r_dict['address'], r_dict['complexName'])
 
-                with open('naver-land.csv', 'w', newline='') as csvfile:
-                    spamwriter = csv.writer(csvfile, delimiter=' ',
-                                            quotechar=',', quoting=csv.QUOTE_MINIMAL)
-                    # spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
-                    spamwriter.writerow([r_dict['complexTypeName'], r_dict['address'], r_dict['complexName']])
+                # row_list = [r_dict['complexTypeName'], r_dict['address'], r_dict['complexName'],"\n"]
+
+                data = r_dict['complexTypeName'] + "\t" + r_dict['address'] + "\t" + r_dict['complexName'] + "\n"
+
+                # print(r_dict['complexTypeName'], r_dict['address'], r_dict['complexName'])
+
+                # with open('naver-land.csv', 'w', newline='') as csvfile:
+                #     spamwriter = csv.writer(csvfile, delimiter=' ',
+                #                             quotechar=',', quoting=csv.QUOTE_MINIMAL)
+                #     # spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
+                #     spamwriter.writerows([r_dict['complexTypeName'], r_dict['address'], r_dict['complexName']])
             
+                with open('naver-land-txt.txt', 'a', newline='') as f:
+                    # f.write(",".join(row_list))
+                    f.write(data)
+
+
             sleep(0.5)
         
         else:

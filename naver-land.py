@@ -16,7 +16,7 @@ def get_list():
         params = {
             'complexSearchSortOption':'popularRank.asc',
             'cortarInfo':'[object Object]',
-            'regionAddress':'부산시',
+            'regionAddress':'부산시 사하구',
             'keywordInfo':'[object Object]',
             'flashData':'[object Object]',
             'flashMapRegionType':'region3',
@@ -29,7 +29,7 @@ def get_list():
             'resultCode':'S00',
             'isFirstSiteArticle':'true',
             'maxSize':0,
-            'regionCode':2600000000,
+            'regionCode':2638000000,
             'isComplexRegion':'false',
             'isaleComplexCount':0,
             'complexCount':0,
@@ -52,7 +52,7 @@ def get_list():
         r = r.text
         r_dict = json.loads(r)
 
-        print(r_dict)
+        # print(r_dict)
         
         if r_dict['complexInfo']['complexList']:
             r_list = r_dict['complexInfo']['complexList']
@@ -61,15 +61,14 @@ def get_list():
                 r_dict = r_list[i]
                 print(r_dict['complexTypeName'], r_dict['address'], r_dict['complexName'])
 
-            # for i in range(len(r_list)):
-            #     r_dict = r_list[i]
-            #     rows = [r_dict['complexTypeName'], r_dict['address'], r_dict['complexName']]
-
-            # with open("naver-land.csv", "wt", encoding='utf8') as f:
-            #     writer = csv.writer(f)
-            #     writer.writerows(rows)
-
+                with open('naver-land.csv', 'w', newline='') as csvfile:
+                    spamwriter = csv.writer(csvfile, delimiter=' ',
+                                            quotechar=',', quoting=csv.QUOTE_MINIMAL)
+                    # spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
+                    spamwriter.writerow([r_dict['complexTypeName'], r_dict['address'], r_dict['complexName']])
+            
             sleep(0.5)
+        
         else:
             print("더 이상 자료 없음")
             break

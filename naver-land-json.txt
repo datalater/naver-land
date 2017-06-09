@@ -1,0 +1,29 @@
+{'complexCode': '6460', 
+'complexName': '다대자유',
+ 'address': '부산시 사하구 다대동 382-3', 
+'cortarNo': '2638010600',
+ 'cityName': '부산시', 
+'dvsnName': '사하구', 
+'secName': '다대동',
+ 'complexTypeCode': 'A01',
+ 'complexTypeName': '아파트',
+ 'complexTypeNameBr': '아파트',
+ 'moveinYm': '1993.11',
+ 'constructCompany': '(주)자유건설', 
+'sizeList': ['76', '102', '141', '166'],
+ 'sizeRangeDisplay': '76~166', 
+'houseHoldNumber': '987', 
+'buildingNumber': '13', 
+'floorNumber': '25', 
+'saleCount': '84', '
+leaseCount': '17', 
+'rentCount': '9', 
+'xCoordinates': '128.9722000', 'yCoordinates': '35.0520830', 'thumbnailUrl1': 'http://landthumb.phinf.naver.net/20160218_40/hscp_img_14557646920522cjbj_JPEG/gw10718_1455764690586.jpgtype=f120', 'thumbnailUrl2': 'http://landthumb.phinf.naver.net/20110422_90/land_system_13034403144507O14t_JPEG/IMG_2751.jpgtype=f120', 'thumbnailUrl3': 'http://landthumb.phinf.naver.net/20110422_170/land_system_1303440314794JXFWb_JPEG/IMG_2758.jpgtype=f120', 'thumbnailUrl4': 'http://landthumb.phinf.naver.net/20110422_168/land_system_1303440314978hAU3R_JPEG/IMG_2760.jpgtype=f120', 'thumbnailUrl5': 'http://landthumb.phinf.naver.net/20110422_78/land_system_1303440315291v7p6r_JPEG/IMG_2756.jpgtype=f120', 'thumbnailUrl6': 'http://landthumb.phinf.naver.net/20110422_174/land_system_1303437207979zqJuA_JPEG/DSCN3566.jpgtype=f120', 'reSearchQuery': '부산시 사하구 다대동 다대자유', 'linkUrl': 'http://land.naver.com/article/articleR
+edirect.nhn?tradTypeCd=&rletTypeCd=A01&cortarNo=2638010600&rletNo=6460', 'sizeDesc': '최소 76㎡&#13;최대 166㎡', 'complexShortName': '다대자유'},
+
+
+
+매물종류 : ['complexTypeName']
+소재지_full : ['address']
+소재지_short : ['secName']
+단지명 : ['complexName']
